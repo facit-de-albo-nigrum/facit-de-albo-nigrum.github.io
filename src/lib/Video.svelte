@@ -1,17 +1,7 @@
 <script lang="ts">
     import info from "./info";
     let password: string = "";
-    let correctPassword: boolean = false;
-
-    function checkPassword() {
-        correctPassword = password === info.password;
-    }   
-
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-            checkPassword();
-        }
-    });
+    $: correctPassword = password === info.password;
 </script>
 
 {#if correctPassword}
@@ -52,16 +42,6 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         outline: none;
-    }
-
-    .password button {
-        width: 100px;
-        height: 50px;
-        font-size: 1.5rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        outline: none;
-        cursor: pointer;
     }
 
     .video {

@@ -19,8 +19,8 @@ jobs:
     name: Build and Deploy website
     runs-on: ubuntu-latest
     env:
-      VIDEO: ${{ secrets.VIDEO }}
-      PASSWORD: ${{ secrets.PASSWORD }}
+      VITE_VIDEO: ${{ secrets.VIDEO }}
+      VITE_PASSWORD: ${{ secrets.PASSWORD }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v3.6.0
