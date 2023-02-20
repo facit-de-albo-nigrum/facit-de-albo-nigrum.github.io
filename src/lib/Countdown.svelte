@@ -36,6 +36,12 @@
         height: 100%;
     }
 
+    @media (max-width: 768px) {
+        .count {
+            flex-direction: column;
+        }
+    }
+
     .count__item {
         display: flex;
         flex-direction: column;
