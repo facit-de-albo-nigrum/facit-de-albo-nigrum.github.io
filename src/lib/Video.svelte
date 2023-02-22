@@ -57,8 +57,14 @@
     font-size: 1.5rem;
     padding: 0 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
+    border-radius: 1rem;
+    outline: transparent;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .password input:hover, .password input:focus {
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
   }
 
   .video {
