@@ -27,6 +27,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  background-color: #242424;
 }
 
 h1 {
