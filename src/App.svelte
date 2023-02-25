@@ -8,7 +8,7 @@
 </script>
 
 <main>
-  {#if correctDate}
+  {#if correctDate || import.meta.env.DEV}
     <Video />
   {:else}
     <Countdown />
